@@ -5,11 +5,16 @@ import android.os.Bundle;
 
 import com.bawei.weidumovie.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initView(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    protected int LayoutId() {
+        return R.layout.activity_main;
     }
 }
